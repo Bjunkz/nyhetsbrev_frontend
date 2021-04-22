@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    border: 10px solid #14a76c;
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+}
+
+.header {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    height: 100%;
+}
+
+.header > * {
+    padding: 20px 20px 10px 10px;
+}
+
+#bear {
+    width: 8rem;
+    height: 8rem;
+}
+.logo, .headline {
+    font-size: 2rem;
+}
+#message {
+    position: fixed;
+    padding-top: 2px;
+    font-size: 0.8rem;
+    color: red;
+}
+.loggedOut{
+    margin-bottom: 20px;
+}
+.loggedOut > * {
+    margin: 2px;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: darkmagenta;
+}
+.loggedIn > * {
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: darkmagenta;
+}
+
+.displayNone {
+    display: none
+}
+
+.display {
+    display: static;
+}
+
+button {
+    transition: all 0.2s;
+    position: relative;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgba(145, 140, 179, 0.671);
+    color: floralwhite;
+    border-radius: 10px;
+}
+button:active {
+    background-color: rgb(91, 110, 219);
+    color: floralwhite;
+    border-radius: 10px;
+}
+input {
+    width: 80%;
+}
+input:focus{
+    background-color: rgba(0, 148, 247, 0.103);
+}
+
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+}
+
+main {
+    background-color:burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+footer {
+    background-color: cyan;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer > * {
+    padding: 20px;
+}
