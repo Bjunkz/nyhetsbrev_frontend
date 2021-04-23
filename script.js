@@ -66,7 +66,7 @@ window.addEventListener('click', function(e){
                                 newsletter: `${newsletterBox.checked== true ? true : false}`
                             }
 
-            fetch("http://localhost:3001/users/post", {
+            fetch("https://nyhetsbrev-bjunkz.herokuapp.com/users/post", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
@@ -112,7 +112,7 @@ loginBtn.addEventListener('click', function(){
     console.log(userLogin)
 
 
-    fetch('http://localhost:3001/users/login', {
+    fetch('https://nyhetsbrev-bjunkz.herokuapp.com/users/login', {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -143,7 +143,7 @@ function login () {
     userObject = {userName: user}
 
 // hämta och visa prenumerationsstatus
-    fetch('http://localhost:3001/users/newsletterstatus', {
+    fetch('https://nyhetsbrev-bjunkz.herokuapp.com/users/newsletterstatus', {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -176,7 +176,7 @@ mainContent.addEventListener('click', (e) => {
                 }
             }
     
-            fetch('http://localhost:3001/users/newsletter', {
+            fetch('https://nyhetsbrev-bjunkz.herokuapp.com/users/newsletter', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
