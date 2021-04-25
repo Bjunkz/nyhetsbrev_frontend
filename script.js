@@ -185,7 +185,13 @@ mainContent.addEventListener('click', (e) => {
             })
             .then(res => res.json())
             .then(data => {
-                let status = data==true ? "du prenumererar på nyhetsbrevet" : "du prenumererar inte på nyhetsbrevet";
+                let status = "";
+                if (data == true || data == "true"){
+                  status = "du prenumererar på nyhetsbrevet";
+                } else {
+                    status = "du prenumererar inte på nyhetsbrevet";
+                }
+                
                 mainContent.innerHTML = `
                 <p>${status}</p><br>
                 <button id="turnOff">Avsluta prenumeration<button>
