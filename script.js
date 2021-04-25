@@ -65,7 +65,7 @@ window.addEventListener('click', function(e){
                                 email: `${emailInput.value}`,
                                 newsletter: `${newsletterBox.checked== true ? true : false}`
                             }
-
+                        console.log(newUser)
             fetch("https://nyhetsbrev-bjunkz.herokuapp.com/users/post", {
                         method: "POST",
                         headers: {
@@ -168,11 +168,11 @@ mainContent.addEventListener('click', (e) => {
         if(e.target.id == "turnOff" || e.target.id == "turnOn"){
             if(e.target.id=="turnOff"){
                 userObject = {userName: user,
-                                newsletter: "false"    
+                                newsletter: false   
                             }
             } else if (e.target.id=="turnOn"){
                 userObject = {userName: user,
-                    newsletter: "true"    
+                    newsletter: true    
                 }
             }
     
