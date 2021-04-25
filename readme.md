@@ -9,3 +9,5 @@ Applikationen bygger på följande:
 3 MongoDB på atlas som databas 
 
 På github ligger branchen "production" live på github pages. 
+
+https://bjunkz.github.io/nyhetsbrev_frontend/

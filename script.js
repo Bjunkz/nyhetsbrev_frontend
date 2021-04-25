@@ -99,8 +99,8 @@ window.addEventListener('click', function(e){
 function createUserLogin(){
     mainContent.innerHTML = ""
     loggedIn.classList.toggle("displayNone");
-    // mainMessage.classList.toggle("displayNone");
-    tjenare.innerHTML = "Tjenare " + localStorage.getItem("loggedIn");
+    let user = localStorage.getItem("loggedIn");
+    tjenare.innerHTML = "Tjenare " + user;
 }
 //logga in
 loginBtn.addEventListener('click', function(){
